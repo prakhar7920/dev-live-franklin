@@ -38,7 +38,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 48px;
 
 }
 
@@ -240,4 +240,10 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+/* dark theme */
+.dark{
+  color: white;
+  background: black;
 }
