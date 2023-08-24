@@ -1,7 +1,7 @@
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
 $(document).ready(function(){
-  $('.multiple-items').slick({
+  $('.story-multiple-items').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -10,7 +10,7 @@ $(document).ready(function(){
 });
 
 export default function decorate(block) {
-    block.classList.add('multiple-items');
+    block.classList.add('story-multiple-items');
     const buttons = document.createElement('div');
     buttons.className = 'carousel-buttons';
     [...block.children].forEach((row, i) => {
