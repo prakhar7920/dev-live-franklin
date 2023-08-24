@@ -1,5 +1,4 @@
 export default function decorate(block) {
-    console.log(block);
     const blockAuthor = document.createElement('div');
     [...block.children].forEach((row) => {
         if(row.children[0].innerHTML !== "redirects"){

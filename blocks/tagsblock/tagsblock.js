@@ -1,5 +1,4 @@
 export default function decorate(block) {
-    console.log(block);
     const blockAuthor = document.createElement('div');
     [...block.children].forEach((row) => {
         const propertydiv = document.createElement('div');

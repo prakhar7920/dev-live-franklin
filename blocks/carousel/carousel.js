@@ -1,13 +1,21 @@
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
+$(document).ready(function(){
+  $('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  })
+});
+
 export default function decorate(block) {
+    block.classList.add('multiple-items');
     const buttons = document.createElement('div');
     buttons.className = 'carousel-buttons';
     [...block.children].forEach((row, i) => {
       const classes = ['image', 'text'];
       classes.forEach((e, j) => {
         row.children[j].classList.add(`carousel-${e}`);
-        console.log(e +" "+ row.children[j].classList);
       });
 
       const button = document.createElement('button');
@@ -21,5 +29,5 @@ export default function decorate(block) {
       buttons.append(button);
     });
     block.parentElement.append(buttons);
-    console.log(block)
+    console.log(block);
   }
