@@ -1,0 +1,15 @@
+.right-container .default-content-wrapper p strong{
+    background-color: aqua;
+}
+
+.tags-list > li{
+    width: 300px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #201D1D;
+    border-radius: 17px;
+    opacity: 1;
+    list-style-type: none;
+    text-align: center;
+    margin: 10px 10px;
+    font-weight:600;
+}
