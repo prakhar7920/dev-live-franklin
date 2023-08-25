@@ -1,0 +1,45 @@
+.authorblock-wrapper .authorblock-authorname {
+  text-align: left;
+  font: italic normal 900 12px/18px Roboto;
+  letter-spacing: 0.48px;
+  color: #202020;
+  text-transform: uppercase;
+  float: left;
+  border-right: 2px solid;
+  padding-right: 10px;
+}
+.authorblock-date {
+  text-align: left;
+  font: normal normal normal 12px/18px Roboto;
+  letter-spacing: 0.48px;
+  color: #202020;
+  text-transform: uppercase;
+  padding-left: 20px;
+  float: left;
+  margin-bottom: 24px;
+}
+.authorblock-tag {
+  clear: both;
+  border-radius: 15px;
+  width: 170px;
+  height: 30px;
+  background: #292985 0% 0% no-repeat padding-box;
+}
+.authorblock-tag p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding: 7px 16px;
+}
+.authorblock-redirects {
+  margin-top: 32px;
+}
+.authorblock-redirects ul {
+  list-style-type: none;
+}
+.authorblock-redirects ul.redirects-list li {
+  display: inline-block;
+  padding-right: 15px;
+}
