@@ -7,9 +7,11 @@ import {
   decorateIcons,
   decorateSections,
   decorateBlocks,
+  decorateBlock,
   decorateTemplateAndTheme,
   waitForLCP,
   loadBlocks,
+  loadBlock,
   loadCSS,
 } from './lib-franklin.js';
 
@@ -28,6 +30,33 @@ function buildHeroBlock(main) {
     section.append(buildBlock('hero', { elems: [picture, h1] }));
     main.prepend(section);
   }
+}
+
+export function createTag(tag, attributes, html) {
+  const el = document.createElement(tag);
+  if (html) {
+    if (html instanceof HTMLElement || html instanceof SVGElement) {
+      el.append(html);
+    } else {
+      el.insertAdjacentHTML('beforeend', html);
+    }
+  }
+  if (attributes) {
+    Object.entries(attributes).forEach(([key, val]) => {
+      el.setAttribute(key, val);
+    });
+  }
+  return el;
+}
+
+export function loadBreadcrumb() {
+  const main = document.querySelector('main');
+  const breadcrumbBlock = buildBlock('breadcrumb', '');
+  const breadcrumbWrapper = createTag('div');
+  breadcrumbWrapper.append(breadcrumbBlock);
+  main.insertBefore(breadcrumbWrapper, main.querySelectorAll('.section')[0]);
+  decorateBlock(breadcrumbBlock);
+  return loadBlock(breadcrumbBlock);
 }
 
 /**
@@ -110,3 +139,4 @@ async function loadPage() {
 }
 
 loadPage();
+loadBreadcrumb();
