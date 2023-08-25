@@ -251,13 +251,6 @@ main img {
   width: 100%;
 }
 
-@media (min-width: 900px) {
-  .section > div {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
-
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);

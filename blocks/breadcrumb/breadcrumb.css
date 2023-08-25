@@ -3,7 +3,6 @@
   width: 100%;
   max-height: var(--breadcrumb-height);
   background: var(--color-white);
-  box-shadow: 0 4px 6px rgba(0 0 0 / 15%);
   z-index: 100;
 }
 
@@ -35,8 +34,8 @@
   font-size: var(--type-body-xxs-size);
 }
 
-.breadcrumb ul li:not(:last-child) a::after  {
-  content: '/';
+.breadcrumb ul li:not(:last-child) a::after {
+  content: "/";
   padding-left: var(--spacing-xxs);
 }
 

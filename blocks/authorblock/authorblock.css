@@ -1,3 +1,16 @@
+.authorblock-container {
+  margin: 0 84px;
+  overflow: hidden;
+}
+.authorblock-container .default-content-wrapper {
+  width: 732px;
+  margin-right: 132px;
+  float: left;
+}
+.authorblock-wrapper {
+  float: left;
+  width: 408px;
+}
 .authorblock-wrapper .authorblock-authorname {
   text-align: left;
   font: italic normal 900 12px/18px Roboto;
